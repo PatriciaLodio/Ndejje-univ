@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ndejje University</title>
+    <link rel="stylesheet" type="text/css" href="lodio.css">
+   </head>
+
+      <body>
+<?php
+    include('email.php');
+ ?>
+    <header>
+        <div class="top-nav">
+            <nav>
+                <ul class="home">
+                    <a href="#" id="home-link">Home</a>
+                
+				</ul>
+        <ul id="home-dropdown">
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Academic Units</a></li>
+          <li><a href="#">Research & Innovations</a></li>
+		  <li><a href="#">Student</a></li>
+        
+    
+     </ul>
+      </nav>
+    <script>
+  // Get the "Home" link and the dropdown menu
+  var homeLink = document.getElementById("home-link");
+  var homeDropdown = document.getElementById("home-dropdown");
+
+  // Add an event listener to the "Home" link that listens for a mouseover event
+  homeLink.addEventListener("mouseover", function(event) {
+    // Show the dropdown menu
+    homeDropdown.style.display = "block";
+  });
+
+  // Add an event listener to the dropdown menu that listens for a mouseout event
+  homeDropdown.addEventListener("mouseout", function(event) {
+    // Hide the dropdown menu
+    homeDropdown.style.display = "none";
+  });
+    </script>
+			<div class="search-container">
+                <form action="/search"method="post">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">&#128269;</button>
+                </form>
+            </div>
+        </div>
+		<br>
+        <div class="logo">
+            <img src="pat.png">
+       
+        <nav>
+            <ul>
+                
+                <li><a href="who we are.html">Who We Are</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Academic Units</a></li>
+                <li><a href="#">Research & Innovations</a></li>
+                <li><a href="#">Student</a></li>
+            </ul>
+        </nav>
+		 </div>
+    </header>
+	<br>
+	<div>
+  <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="team.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="ndus2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="ndus3.jpg" style="width:100%">
+        </div>
+   </div>
+  </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+  <div>
+  <header>
+  <marquee>We bring you all the latest student news</marquee>
+  </header>
+  </div>
+  <nav>
+    <div class="welcome">
+    <h1>WELCOME TO NDEJJE UNIVERSITY</h1>
+	
+       <button class="apply-now">Apply Now</button>
+         </div>
+	       </nav>
+	 
+  <main>
+  <section>
+  <article>
+  <header>
+      <h2> Student Games</h2>
+        <p class="author"> By Patricia Lodio</p>
+         </header>
+            <p> Ndejje University is one of the leading private contributors to Ugandan Athletics development.
+             We have sent out athletes to compete for both University and country at regional, continental and 
+             international championships. The university sports and recreation department is blessed with a dedicated,
+             professional and winning team of coaches.</p>
+            <p>The games include: Track and Field Athletics, Mini-Marathon, Badminton, Swimming, Basketball, Table Tennis,
+             Chess, Tennis, Cross-country, Volleyball, Football, Wood ball, Rugby, Netball, and Handball.</p>
+   </div>
+ 
+   </main>
+   </section>
+   </article>
+   </header>
+   <aside>
+   <header>
+         <h1> Academics</h1>
+         </header>
+         <p>Academics is one of the primary reason one joins the university. To equip students with our Academic
+         skills,we have a series of activities inclusive of lectures, assessments,study travels,internship placements
+        ,workshps and seminars,and research</p>
+         <p> Detailed information regarding academic activities can be obtained from your faculty administrators' office.
+         This is inclusive of study timetables for all programs; Day,Evening,Weekend and In-service</p>
+    </aside>
+ 
+    <div class="form">
+        <form action="/subscribe" method="post">
+           <p> subscribe to our newsletter</p>
+              <input type="email" name="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+                   </form>
+
+ 
+    <footer>
+	 <div id="getInTouch">
+      <h3>GET IN TOUCH</h3>
+        <p>Ntinda, Kampala</p>
+          <p>P.O. Box 7062, Kampala, Uganda</p>
+             <p>Tel: +256-312-</p>
+	           <p>Email: info@ndejjeuniversity.ac.ug<p>
+                <p>AR:registrar@ndejjeuniversity.ac.ug<p>
+                </div>
+  
+    <div class="admission">
+     <h3>Admission</h3>
+	  <ul>
+       <li><a href ="#">Admissions</a></li>
+         <li><a href="#">Academic Units</a></li>
+           <li><a href="#">Research & Innovations</a></li>
+             <li><a href="#">Student</a></li>
+	          </ul>
+               </div>
+			   
+    <div id="importantLinks">
+     <h3>Important Links</h3>
+       </div>
+         <div class="Visionary">
+           <h3>NDU's Visionary</h3>
+               <img src="Tree.jpg" style="width:100px;height:100px; border-radius:50px;">
+                 <p>Action against environmental degradation</p>
+	                <p class="staff"> NdejjeTv- Staff</p>
+                      </div>
+                         </footer>
+						 
+	<div class="bottomfooter">
+      <p>&copy;2023 ndustudentnews.</p>
+		</div>
+</body>
+</html>
